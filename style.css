@@ -1,0 +1,101 @@
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 320px;
+  padding: 4px;
+  background-color: #bcbcbc;
+}
+
+.calculator__result {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px;
+  background-color: #202020;
+}
+
+.calculator__result-primary, .calculator__result-secondary {
+  background-color: transparent;
+  border: none;
+  text-align: right;
+  font-weight: 700;
+  font-size: 2.6rem;
+  padding-left: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: whitesmoke;
+}
+
+.calculator__result-secondary {
+  visibility: hidden;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: ghostwhite;
+}
+
+.calculator__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background-color: #202020;
+}
+
+.calculator__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: 20px 0;
+  background-color: #353535;
+  color: whitesmoke;
+}
+
+.calculator__btn:hover {
+  background-color: #252525;
+}
+
+.calculator__btn:active {
+  background-color: white;
+}
+
+.calculator__btn--number {
+  background-color: #454545;
+}
+
+.calculator__btn--equals {
+  background-color: #00BECC;
+}
+
+.calculator__btn--equals:hover {
+  background-color: #303030;
+}
+/*# sourceMappingURL=style.css.map */
